@@ -1,0 +1,171 @@
+new_sub1, 0.4036, 
+    lgb 2.0
+    'num_leaves':  96,
+    'max_depth': 10,
+    'feature_fraction': 0.95,
+    'early_stopping_rounds' : 100, # early_stopping_rounds is important. only when early_stopping happens, the best_iteration will be returned.
+    'num_boost_round': 1200, # num_boost_round, Number of boosted trees to fit 
+    'decay': 0.99,
+    'min_learning_rate': 0.01,
+ 
+new_sub2, 0.4043892
+    "num_leaves": 256, 
+    "is_unbalance"": false, 
+    "decay": 0.995, 
+    "min_sum_hessian_in_leaf": 20, 
+    "max_depth": 12, 
+    "min_data_in_leaf": 100, 
+    "num_boost_round"": 600, 
+    "feature_fraction": 0.6, 
+    "min_learning_rate"": 0.02, 
+    model_2.0.mdl,
+    lgb_version=0.2
+
+new_sub3, 0.4040
+    "num_leaves": 256, 
+    "is_unbalance"": false, 
+    "decay": 0.995, 
+    "min_sum_hessian_in_leaf": 20, 
+    "max_depth": 12, 
+    "min_data_in_leaf": 100, 
+    "num_boost_round"": 1000, 
+    "feature_fraction": 0.5, 
+    "min_learning_rate"": 0.02, 
+
+new_sub4, 0.4043469
+    "num_leaves": 256, 
+    "is_unbalance"": false, 
+    "decay": 0.995, 
+    "min_sum_hessian_in_leaf": 20, 
+    "max_depth": 12, 
+    "min_data_in_leaf": 100, 
+    "num_boost_round"": 800, 
+    "feature_fraction": 0.55, 
+    "min_learning_rate"": 0.02, 
+
+
+new_sub5, 0.4042204
+    "num_leaves": 256,
+    "is_unbalance"": false,
+    "decay": 0.995,
+    "min_sum_hessian_in_leaf": 20,
+    "max_depth": 12,
+    "min_data_in_leaf": 100,
+    "num_boost_round"": 900,
+    "feature_fraction": 0.5,
+    "min_learning_rate"": 0.02,
+
+
+new_sub6, 0.4043877, looks new features little better
+new cat feature added
+    "num_leaves": 256,
+    "is_unbalance"": false,
+    "decay": 0.995,
+    "min_sum_hessian_in_leaf": 20,
+    "max_depth": 12,
+    "min_data_in_leaf": 100,
+    "num_boost_round"": 900,
+    "feature_fraction": 0.5,
+
+    
+new_sub7, 0.4041962, looks new feature does not work better':
+new cat feature added
+    "num_leaves": 256, 
+    "is_unbalance"": false, 
+    "decay": 0.995, 
+    "min_sum_hessian_in_leaf": 20, 
+    "max_depth": 12, 
+    "min_data_in_leaf": 100, 
+    "num_boost_round"": 600, 
+    "feature_fraction": 0.6, 
+    "min_learning_rate"": 0.02, 
+    lgb_version=0.2
+
+new_sub8, 0.4044729, current best
+new cat feature added
+    "num_leaves": 256, 
+    "is_unbalance"": false, 
+    "decay": 0.995, 
+    "min_sum_hessian_in_leaf": 20, 
+    "max_depth": 10, 
+    "min_data_in_leaf": 100, 
+    "num_boost_round"": 1200, 
+    "feature_fraction": 0.6, 
+    "min_learning_rate"": 0.02, 
+    lgb_version=0.2
+
+new_sub9, 0.4064604, current best
+new cat feature added, pnone estimation added
+    "num_leaves": 256, 
+    "is_unbalance"": false, 
+    "decay": 0.995, 
+    "min_sum_hessian_in_leaf": 20, 
+    "max_depth": 10, 
+    "min_data_in_leaf": 100, 
+    "num_boost_round"": 1200, 
+    "feature_fraction": 0.6, 
+    "min_learning_rate"": 0.02, 
+    lgb_version=0.2
+
+new_sub10, 0.4069355, current best, model 9 is used
+new cat feature added, pnone estimation added
+pnone estimation optimized with 4, 16, 0.95, 0.02 full user or oder related features
+    "num_leaves": 256, 
+    "is_unbalance"": false, 
+    "decay": 0.995, 
+    "min_sum_hessian_in_leaf": 20, 
+    "max_depth": 10, 
+    "min_data_in_leaf": 100, 
+    "num_boost_round"": 1200, 
+    "feature_fraction": 0.6, 
+    "min_learning_rate"": 0.02, 
+    lgb_version=0.2
+
+new_sub11, 0.4069528, current best, model 10 is created, but rank still 23rd
+based on new_sub 10, tunning the model parameters according to cv valida score.  learning rate half min used on round 500 !!!
+    "num_leaves": 256, 
+    "is_unbalance"": false, 
+    "decay": 0.995, 
+    "min_sum_hessian_in_leaf": 20, 
+    "max_depth": 10, 
+    "min_data_in_leaf": 80, 
+    "num_boost_round"": 1275, 
+    "feature_fraction": 0.55, 
+    "min_learning_rate"": 0.02, 
+
+new_sub12, 0.4068406,
+based on new_sub 10, tunning the model parameters according to cv valida score.  learning rate half min used on round 500 !!!
+    "num_leaves": 256, 
+    "is_unbalance"": false, 
+    "decay": 0.995, 
+    "min_sum_hessian_in_leaf": 20, 
+    "max_depth": 10, 
+    "min_data_in_leaf": 80, 
+    "num_boost_round"": 1400, 
+    "feature_fraction": 0.56, 
+    "min_learning_rate"": 0.02, 
+
+new_sub13, 0.4071221,
+tunning the model parameters according to cv valida score.  learning rate half and half min to 0.004 !!!
+    "num_leaves": 256, 
+    "is_unbalance"": false, 
+    "decay": 0.995, 
+    "min_sum_hessian_in_leaf": 20, 
+    "max_depth": 10, 
+    "min_data_in_leaf": 80, 
+    "num_boost_round"": 3000, 
+    "feature_fraction": 0.56, 
+    "min_learning_rate"": 0.16, 
+
+new_sub14, 0.4070969,
+tunning the model parameters according to cv valida score.  learning rate half and half min to 0.005 !!!
+    "num_leaves": 256, 
+    "is_unbalance"": false, 
+    "decay": 0.995, 
+    "min_sum_hessian_in_leaf": 20, 
+    "max_depth": 10, 
+    "min_data_in_leaf": 100, 
+    "num_boost_round"": 3000, 
+    "feature_fraction": 0.56, 
+    "min_learning_rate"": 0.02, 
+
